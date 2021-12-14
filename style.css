@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
+*{
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+    color: white;
+    
+}
+
+html{
+    font-size: 10px;
+    font-family: Roboto Mono, sans-serif;
+    scroll-behavior: smooth;
+    background: url(./Resources/background.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: sandybrown;
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+h1{
+    padding-left: 10px;
+}
+.section-title{
+    padding: 30px;
+    font-size: 2.5rem;
+    font-weight:bold;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+
+/* header */
+#header{  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+#header .header-container{    
+    display: flex;
+    transition: .5s ease background-color;
+    height: 30px;
+}
+
+#header .nav-bar{
+    display: flex;  
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    font-weight: 800;
+
+}
+#header .nav-title{
+    padding-right: 10px;
+}
+
+#header .nav-list{
+    margin: auto;
+    text-align: center;
+}
+#header .nav-list li{
+    justify-content: space-between;
+    align-items: center;
+    display: inline-block;
+    text-transform: uppercase;
+}
+/* end header */
+
+/* hero */
+#hero {
+   text-align: center;
+    width: 100%;
+    height: 510px;
+}
+#hero h1{
+text-align: center;
+padding-top: 297px;
+}
+
+/* end hero */
+
+
+/* article */
+
+#article .article-container{
+    width: 100%;
+}
+#article .article-top{
+    background-color: white;
+    width: 100%;
+    text-align: center;   
+}
+#article h1{
+   color: black;
+   text-align: center;
+}
+#article h3{
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+#article img{
+    align-items: center;
+    height: 400px;
+    width: auto;
+    overflow: hidden;
+}
+#article .article-top p{
+    margin: auto;
+    padding: 20px;
+    color: black;
+    line-height: 2rem;
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.moreText{
+    display: none;
+}
+#article span{
+    color: black;
+}
+#article .read-more-btn{
+  color:gray;
+  background-color: white;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.text.show-more .moreText{
+    display: inline;
+}
+/* end article */
+
+/* grill types */
+#grill-types h1{
+    text-align: center;
+    color: white;
+}
+
+#type .grill-info{
+    padding: 20px;
+    font-size: 12px;
+    margin: auto;
+    max-width: 600px;
+}
+#type h3{
+    padding-left: 10px;
+}
+#grill-img img{
+    margin: auto;
+    display: block;
+}
+/* end grill types */
+
+/* cook type */
+#cook{
+    width: 100%;
+}
+#cook h3{
+    color: white;
+}
+#cook p{
+    font-size: 12px;
+}
+#cook .cook-item{
+   
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 18px 0 black;
+    transition: .3s ease;
+}
+#cook .cook-item:hover{
+    box-shadow: 0px 0px 5px 0 white;
+}
+
+/* end cook type */
+
+
+
+/* Where to buy */
+#buy .section-title{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+#wtb{
+ 
+   width: 100%;
+}
+
+#wtb .wtb-place{
+    width: 100px;
+    min-width: none;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+ 
+    box-shadow: 0px 0px 18px 0 black;
+    transition: .3s ease;
+}
+#wtb .wtb-place:hover{
+    box-shadow: 0px 0px 5px 0 white;
+}
+#wtb .wtb-places{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#wtb img{
+    width: 100px;
+    height: 100px;
+}
+/* end of where to buy */
+
+/* cite */
+#cook .cite{
+    font-size: 5px;
+}
+.cite{
+    font-size: 5px;
+}
+/* cite */
+
+/* start of footer */
+#footer{
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    line-height: 1.5rem;
+}
+/* end of footer */
+
+/* media only */
+@media only screen and (max-width:600px){
+    #wtb .wtb-places{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+}
